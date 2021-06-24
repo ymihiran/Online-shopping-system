@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api" name="shopAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="DELETE POST PATCH GET" uri-template="/service/{service}/*">
+        <inSequence>
+            <property expression="get-property('uri.var.service')" name="Service" scope="default" type="STRING"/>
+            <switch source="get-property('Service')">
+                <case regex="get_item">
+                    <log description="get_items_log" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Service'))" name="message"/>
+                    </log>
+                    <send>
+                        <endpoint key="ItemGetEP"/>
+                    </send>
+                </case>
+                <case regex="search_item">
+                    <log description="get_a_item_log" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Service'))" name="message"/>
+                    </log>
+                    <send>
+                        <endpoint key="oneItemGet"/>
+                    </send>
+                </case>
+                <case regex="delete_item">
+                    <log description="shop_patch_log" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Service'))" name="message"/>
+                    </log>
+                    <send/>
+                </case>
+                <case regex="update_item">
+                    <log description="shop_put_log" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Service'))" name="message"/>
+                    </log>
+                    <send>
+                        <endpoint key="shop_put_EP"/>
+                    </send>
+                </case>
+                <case regex="shop_delete">
+                    <log description="shop_delete_log" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Service'))" name="message"/>
+                    </log>
+                    <send>
+                        <endpoint key="shop_delete_EP"/>
+                    </send>
+                </case>
+                <case regex="delivery">
+                    <log description="delivery_log" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Service'))" name="message"/>
+                    </log>
+                    <send>
+                        <endpoint key="deliveryEP"/>
+                    </send>
+                </case>
+                <case regex="payment">
+                    <log description="payment_log" level="custom">
+                        <property expression="fn:concat('Routing to ', get-property('Service'))" name="message"/>
+                    </log>
+                    <send/>
+                </case>
+                <default>
+                    <log description="fault_log" level="custom">
+                        <property expression="fn:concat('Invalid Service - ', get-property('Service'))" name="message"/>
+                    </log>
+                    <respond/>
+                </default>
+            </switch>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

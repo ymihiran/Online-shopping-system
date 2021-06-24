@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.Nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(75, 104, 233);
+  color: white;
+}
+
+.Nav-links {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.item-con {
+  background-color: #1d91df; /* Green */
+  border-radius: 25px;
+  color: rgb(255, 246, 246);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+  width: 1000px;
+  height: 200px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.cons-link {
+  color: antiquewhite;
+  text-decoration: none;
+}
+.cart-inc-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50; /* Green */
+  width: 100px;
+  height: 50px;
+}
+
+.cart-div {
+  margin-left: 1000px;
+  margin-top: 100px;
+}
+
+.add-to-cart {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  opacity: 1;
+}
+
+.link-style {
+  color: white;
+  text-decoration: none;
+}

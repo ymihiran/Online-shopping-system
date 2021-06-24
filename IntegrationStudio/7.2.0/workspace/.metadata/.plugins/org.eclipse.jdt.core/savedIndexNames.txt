@@ -1,0 +1,18 @@
+INDEX VERSION 1.131+C:\Users\ISJ\IntegrationStudio\7.2.0\workspace\.metadata\.plugins\org.eclipse.jdt.core
+770612887.index
+2177788482.index
+2642296630.index
+1842525553.index
+2450514121.index
+22596354.index
+2290888187.index
+596733375.index
+3674167210.index
+3735993723.index
+3306610154.index
+318176706.index
+513758929.index
+283403330.index
+66626548.index
+3105154287.index
+606081716.index

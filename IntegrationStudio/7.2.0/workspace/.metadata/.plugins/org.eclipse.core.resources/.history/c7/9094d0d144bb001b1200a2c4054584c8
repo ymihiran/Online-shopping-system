@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="shopAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/shopAPI.xml</file>
+    </artifact>
+    <artifact name="shop_get_EP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/shop_get_EP.xml</file>
+    </artifact>
+    <artifact name="shop_post_EP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/shop_post_EP.xml</file>
+    </artifact>
+    <artifact name="shop_patch_EP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/shop_patch_EP.xml</file>
+    </artifact>
+    <artifact name="shop_put_EP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/shop_put_EP.xml</file>
+    </artifact>
+    <artifact name="shop_delete_EP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/shop_delete_EP.xml</file>
+    </artifact>
+    <artifact name="deliveryEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/deliveryEP.xml</file>
+    </artifact>
+    <artifact name="shop_get_EP1" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/shop_get_EP1.xml</file>
+    </artifact>
+    <artifact name="ItemGetEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ItemGetEP.xml</file>
+    </artifact>
+</artifacts>

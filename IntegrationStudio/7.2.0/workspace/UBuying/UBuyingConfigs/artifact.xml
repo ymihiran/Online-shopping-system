@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="shopAPI" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/shopAPI.xml</file>
+    </artifact>
+    <artifact name="deliveryEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/deliveryEP.xml</file>
+    </artifact>
+    <artifact name="ItemGetEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ItemGetEP.xml</file>
+    </artifact>
+    <artifact name="oneItemGet" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/oneItemGet.xml</file>
+    </artifact>
+    <artifact name="cartGetEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/cartGetEP.xml</file>
+    </artifact>
+    <artifact name="cartRemoveEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/cartRemoveEP.xml</file>
+    </artifact>
+    <artifact name="UpdateQtyEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/UpdateQtyEP.xml</file>
+    </artifact>
+    <artifact name="categoryViewEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/categoryViewEP.xml</file>
+    </artifact>
+    <artifact name="getOneCartItemEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getOneCartItemEP.xml</file>
+    </artifact>
+    <artifact name="addtoCartEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/addtoCartEP.xml</file>
+    </artifact>
+    <artifact name="displayDashboardItemsEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/displayDashboardItemsEP.xml</file>
+    </artifact>
+    <artifact name="deleteDashItemEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/deleteDashItemEP.xml</file>
+    </artifact>
+    <artifact name="addItemEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/addItemEP.xml</file>
+    </artifact>
+    <artifact name="updateItemEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/updateItemEP.xml</file>
+    </artifact>
+    <artifact name="getSpecificItemEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getSpecificItemEP.xml</file>
+    </artifact>
+    <artifact name="DeliveredOrderDeleteEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/DeliveredOrderDeleteEP.xml</file>
+    </artifact>
+    <artifact name="getDeliveredOrdersEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getDeliveredOrdersEP.xml</file>
+    </artifact>
+    <artifact name="getNewOrdersEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getNewOrdersEP.xml</file>
+    </artifact>
+    <artifact name="getCompleteOrdersEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/getCompleteOrdersEP.xml</file>
+    </artifact>
+    <artifact name="ViewNewOrdersEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ViewNewOrdersEP.xml</file>
+    </artifact>
+    <artifact name="customerPlaceOrderEP" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/customerPlaceOrderEP.xml</file>
+    </artifact>
+    <artifact name="MobilePayments" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/MobilePayments.xml</file>
+    </artifact>
+</artifacts>

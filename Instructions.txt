@@ -1,0 +1,12 @@
+*WSO2 Integration
+ add Integration files to the WSO2 IntegrationStudio
+
+
+*Frontend
+1.Install necessary dependencies
+
+
+*Backend
+1.install necessary dependencies to the backend
+2.add MongoDB connection to the connection.js file
+3.add Json web token key to the .env file (https://jwt.io/);

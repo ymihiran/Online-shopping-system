@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api" name="shopAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="DELETE POST PATCH GET" uri-template="/service/{service}/*">
+        <inSequence>
+            <property expression="get-property('uri.var.service')" name="Service" scope="default" type="STRING"/>
+            <switch source="get-property('Service')">
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <case regex=".*+"/>
+                <default/>
+            </switch>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
