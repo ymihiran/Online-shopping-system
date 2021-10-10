@@ -1,8 +1,28 @@
+
+  <a href="https://github.com/Sandaruwan-Jayasundara/Online-shopping-system">
+    <img src="https://raw.githubusercontent.com/Sandaruwan-Jayasundara/Online-shopping-system/main/Frontend/src/logo.png" width="200" height="80">
+  </a>
+<br/>
+# Ecommerce Application
+
+
+### Developers
+
+* [J.M.I.S Jayasundara](https://github.com/Sandaruwan-Jayasundara)
+* [S.M.J Fernando](https://github.com/mandara-fernando)
+* [M.U.D Jayawardhana](https://github.com/Ushanjay)
+* [D.W.L.K Fonseka](https://github.com/Kethaka-fonseka)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+
+
 
 In the project directory, you can run:
 
