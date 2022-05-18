@@ -38,7 +38,7 @@ function Nav() {
                     marginTop: "auto",
                     marginBottom: "auto",
                   }}
-                  src='https://i.postimg.cc/rpVCX6cF/Microsoft-Teams-image-2.jpg'
+                  src='https://media.aayubo.com/assets/content/12-1uowsN3478s.jpg'
                   alt=''
                 />
               </a>
@@ -58,7 +58,7 @@ function Nav() {
               />
               <button
                 onClick={handleSearch}
-                class='btn btn-primary'
+                class='btn btn-dark'
                 type='button'
                 value='Search'
                 id='submit'

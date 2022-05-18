@@ -5,7 +5,7 @@ function Header() {
   return (
     <ul
       className='navbar-nav bg-gradient-primary sidebar sidebar-dark accordion'
-      style={{ float: "left" }}
+      style={{ float: "left"}}
     >
       <a
         className='sidebar-brand d-flex align-items-center justify-content-center'
@@ -14,7 +14,7 @@ function Header() {
         <div className='sidebar-brand-icon rotate-n-15'>
           <i className='fas fa-laugh-wink'></i>
         </div>
-        <div className='sidebar-brand-text mx-3'>Ubuying</div>
+        <div className='sidebar-brand-text mx-3'>AGRI STORE</div>
       </a>
       <hr className='sidebar-divider my-0' />
       <li className='nav-item active'>
@@ -24,7 +24,7 @@ function Header() {
         </a>
       </li>
       <hr className='sidebar-divider' />
-      <div className='sidebar-heading'>UBUYING</div>
+      <div className='sidebar-heading'>AGRI STORE</div>
       <li className='nav-item'>
         <a
           className='nav-link collapsed'

@@ -12,19 +12,20 @@ function CartContainer(props) {
                 id='table'
                 style={{
                   width: "900px",
-                  backgroundColor: "#f2f2f2",
+                  backgroundColor: "#ffffff",
                   float: "left",
                   marginLeft: "115px",
                   marginTop: "50px",
+                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
                 }}
               >
-                <tbody>
+                <tbody >
                   <tr>
                     <td>
-                      <a style={{ float: "left" }} href=''>
+                      <a style={{ float: "left", marginLeft:"25px"}} href=''>
                         {" "}
                         <img
-                          style={{ height: "380px", width: "450px" }}
+                          style={{ height: "380px", width: "380px" }}
                           src={`http://localhost:3000/products-images/${item.photo}`}
                           alt=''
                         />
@@ -44,22 +45,22 @@ function CartContainer(props) {
                             fontSize: "20px",
                             color: "#8080ff",
                             fontWeight: "bold",
-                            fontFamily: "Times New Roman",
+                            fontFamily: "Arial",
                             marginTop: " -15px",
                           }}
                         >
-                          {item.Brand}
+                          {item.Title}
                         </p>
                         <p
                           class='card-text'
                           style={{
                             fontSize: "20px",
                             fontWeight: "bold",
-                            fontFamily: "Times New Roman",
+                            fontFamily: "Arial",
                             marginTop: " -15px",
                           }}
                         >
-                          {item.Title}
+                          {item.Brand}
                         </p>
                         <p>
                           Price:{" "}
@@ -90,7 +91,8 @@ function CartContainer(props) {
                         <br />
                         <br />{" "}
                         <button
-                          style={{ fontWeight: "bold" }}
+                          className="btn btn-danger"
+                          style={{ width:"150px" }}
                           onClick={props.RemoveFromCart.bind(this, item)}
                         >
                           Remove

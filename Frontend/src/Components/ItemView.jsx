@@ -52,7 +52,7 @@ function ItemView({ match }) {
                 title: "Add to Cart!",
                 text: "successfully add to the cart!",
                 icon: "success",
-                button: "Aww yiss!",
+                button: "OK",
               });
             });
         } else {
@@ -87,14 +87,15 @@ function ItemView({ match }) {
               <div class='preview-pic tab-content'>
                 <div class='tab-pane active' id='pic-1'>
                   <img
-                    style={{ height: "380px", width: "450px" }}
+                    style={{ height: "450px", width: "450px" }}
                     src={`http://localhost:3000/products-images/${location.state.photo}`}
                   />
                 </div>
               </div>
             </div>
             <div class='details col-md-6'>
-              <h3 class='product-title'>{location.state.Brand}</h3>
+              <h3 class='product-title'style={{color:"red"}}>{location.state.Title}</h3>
+              <h6 class='product-title' style={{color:"purple"}}>{location.state.Brand}</h6>
               <div class='rating'>
                 <div class='stars' style={{ color: "#ffd11a" }}>
                   <span class='fa fa-star checked'></span>
@@ -106,7 +107,7 @@ function ItemView({ match }) {
               </div>
               <p class='product-description'>{location.state.Description}</p>
               <h4 class='price'>
-                current price: <span>{location.state.Price}</span>
+               Price: <span> Rs. {location.state.Price}.00</span>
               </h4>
 
               <h5 class='sizes'>
@@ -139,7 +140,7 @@ function ItemView({ match }) {
                 <br></br>
                 <a
                   href='/checkout'
-                  style={{ width: "150px", height: "50px", float: "left" }}
+                  style={{ width: "150px", height: "50px", float: "left", lineHeight:"35px"}}
                   className='btn btn-success'
                 >
                   Purchase

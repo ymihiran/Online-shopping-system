@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, Component } from "react";
 import { useHistory } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
@@ -17,6 +17,7 @@ export default function Success() {
   const phoneNumber = location.state.phoneNumber;
   const Total = location.state.total;
   const history = useHistory();
+  const order = items;
 
   const details = {
     name: name,
@@ -24,24 +25,33 @@ export default function Success() {
     Total: Total,
   };
 
-  function sendEmail(e) {
+  function sendEmail(e){
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_byyjoo7",
-        "template_fqshe5e",
-        e.target,
-        "user_iAetIx0G1KyiQJTlOpDpj"
-      )
-      .then(
-        (result) => {
-          history.push("/");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    alert("Sending..");
+    console.log(items);
+     
+    var templateParams = {
+      to_name: 'xyz',
+      from_name: 'abc',
+      message_html: 'Please Find out the attached file'
+    };
+
+
+    emailjs.sendForm(
+      'service_tc03vnm',
+      'template_7x8vdag',
+        e.currentTarget,
+       '-utNmr2eLLLW4jLyR'
+
+    ).then(res=>{
+      console.log(res);
+      alert("Sent");
+
+    }).catch(err=>console.log(err));
+
+
   }
+
 
   useEffect(() => {
     items.map((item) => {
@@ -56,6 +66,10 @@ export default function Success() {
         Total,
         item,
       };
+
+      document.getElementById("subBut").click();
+
+     // order = placeOrder;
 
       axios
         .post(
@@ -130,6 +144,18 @@ export default function Success() {
           <br /> we'll be in touch shortly!
         </p>
         <Email details={details} sendEmail={sendEmail} />
+        <form onSubmit={sendEmail}>
+                            <input type="hidden" name="email" value={email} />
+                            <input type="hidden" name="from_name" value="Agri Store" />
+                            <input type="hidden" name="to_name" value={name}/>
+                            <input type="hidden" name="order" value={order}/>
+                            <input type="hidden" name="address" value={addresss}/>
+                            <input type="hidden" name="phoneNumber" value={phoneNumber}/>
+                            <input type="hidden" name="total" value={Total}/>
+                            &nbsp; &nbsp;
+                            <button hidden id="subBut">Send Email</button></form>
+
+        
       </div>
     </center>
   );

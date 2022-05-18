@@ -17,7 +17,7 @@ class Main extends Component {
             <div class='container'>
               <div class='header' style={{ height: "410px ", width: "1200px" }}>
                 <img
-                  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogQIzVe-H1eHvPn2G-k4-cj3VzGdEvDTNT1PkJDr3NJj7IHE54Y4aWxRecSVjLn-m5xk&usqp=CAU'
+                  src='https://media.aayubo.com/assets/content/1-1ubneN2383w.jpg'
                   style={{
                     height: "410px ",
                     width: "1210px",

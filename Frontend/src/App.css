@@ -19,6 +19,10 @@
   list-style: none;
 }
 
+.test{
+  background: rgb(75, 104, 233);
+}
+
 .item-con {
   background-color: #1d91df; /* Green */
   border-radius: 25px;

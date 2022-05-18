@@ -16,7 +16,7 @@ import OrderSuccess from "./Checkout/OrderSuccess";
 import payment from "./Checkout/Paypal";
 import ViewOrders from "./admin/Orders/ViewOrders";
 import mobilepayments from "./Checkout/mobilePayment";
-import CardPayment from "./Components/CardPayment";
+
 
 axios.defaults.withCredentials = true;
 
@@ -52,7 +52,7 @@ function App() {
           <Route exact path='/newOrders' component={MainContainer} />
           <Route exact path='/delivered' component={MainContainer} />
           <Route exact path='/itemDetails' component={itemDetails} />
-          <Route exact path='/card' component={CardPayment} />
+         
         </Switch>
       </Router>
     </div>

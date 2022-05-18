@@ -25,7 +25,7 @@ function MainHeader() {
   } else if (localStorage.getItem("type") == "user") {
     return (
       <React.Fragment>
-        <div style={{ width: "100%", height: "40px", background: "#e6e6e6" }}>
+        <div style={{ width: "100%", height: "40px", background: "black" }}>
           <div class='mainmenu pull-center' style={{ float: "right" }}>
             <ul class='nav'>
               <li style={{ marginRight: "40px" }}>
@@ -48,7 +48,7 @@ function MainHeader() {
       <React.Fragment>
         <div
           class='search-logo'
-          style={{ width: "100%", height: "40px", background: "#e6e6e6" }}
+          style={{ width: "100%", height: "40px", background: "black" }}
         >
           <div class='mainmenu pull-center' style={{ float: "right" }}>
             <ul class='nav'>

@@ -122,10 +122,11 @@ class Cart extends Component {
                   style={{
                     float: "left",
                     width: "270px",
-                    height: "160px",
+                    height: "120px",
                     marginTop: "75px",
                     marginRight: "130px",
                     backgroundColor: "#f2f2f2",
+                    
                   }}
                 >
                   <Link
@@ -147,8 +148,6 @@ class Cart extends Component {
                   </Link>
 
                   <br />
-                  <br />
-                  <br />
                   <center>
                     <div>
                       <p
@@ -156,7 +155,7 @@ class Cart extends Component {
                           fontSize: "20px",
                           float: "left",
                           fontWeight: "bold",
-                          fontFamily: "Times New Roman",
+                          fontFamily: "Arial",
                         }}
                       >
                         Total:{" "}
@@ -171,7 +170,7 @@ class Cart extends Component {
                           marginLeft: "10px",
                         }}
                       >
-                        {this.getTotalPrice()} .00
+                        Rs. {this.getTotalPrice()} .00
                       </p>
                     </div>
                   </center>

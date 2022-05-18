@@ -113,8 +113,8 @@ export default function Ceate_listing() {
               }}
             >
               <option value='Default'>-</option>
-              <option value='Mobile'>Mobile</option>
-              <option value='Lap-top'>Lap top</option>
+              <option value='Fruit'>Organic</option>
+              <option value='Vegetable'>Non-Organic</option>
               <option value='Tab'>Tab</option>
               <option value='Game-console'>Game console</option>
               <option value='Computer'>Computer</option>

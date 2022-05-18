@@ -16,6 +16,7 @@ class ItemContainer extends Component {
     };
   }
   render() {
+
     return (
       <div>
         <Link
@@ -34,16 +35,17 @@ class ItemContainer extends Component {
             },
           }}
         >
-          <div style={{ marginTop: "40px", marginLeft: "13px" }}>
+          <div style={{ marginTop: "40px", marginLeft: "30px", justifyContent:"center" }}>
             <table
               class='table table-hoves'
               id='table'
               style={{
-                width: "800px",
+                width: "600px",
                 backgroundColor: "white",
                 float: "left",
                 marginLeft: "115px",
                 marginTop: "-10px",
+                boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
               }}
             >
               <tbody>
@@ -53,20 +55,20 @@ class ItemContainer extends Component {
                     <a style={{ float: "left" }}>
                       {" "}
                       <img
-                        style={{ height: "200px", width: "280px" }}
+                        style={{ height: "200px", width: "200px" }}
                         src={`http://localhost:3000/products-images/${this.state.photo}`}
                         alt=''
                       />
                     </a>
-                    <div class='gol' style={{ marginLeft: "300px" }}>
+                    <div class='gol' style={{ marginLeft: "220px" }}>
                       <a href='/get_vehicle/{{this.id}}'>
                         <h2
                           style={{
                             fontSize: "30px",
-                            fontFamily: "Times New Roman",
+                            fontFamily: "Arial",
                             color: "#2f63a3",
                           }}
-                        ></h2>
+                        >  {this.state.Title}</h2>
                       </a>
                       <p
                         class='card-text'
@@ -81,24 +83,29 @@ class ItemContainer extends Component {
                       <p
                         class='card-text'
                         style={{
-                          fontSize: "18px",
-                          fontFamily: "Times New Roman",
+                          fontSize: "12px",
+                          fontFamily: "Arial",
+                          color: "#808080",
                           marginTop: " -15px",
                         }}
                       >
-                        {this.state.Title}
+                        {this.state.Description}
                       </p>
                       <p
                         class='card-text'
                         style={{
-                          fontSize: "15px",
-                          fontFamily: "Times New Roman",
+                          fontSize: "20px",
+                          fontWeight: "bold",
+                          fontFamily: "Arial",
                           marginTop: " -15px",
                           color: "red",
                         }}
                       >
-                        Rs.{this.state.Price}
+                        Rs.{this.state.Price}.00
                       </p>
+
+                      <button type="button" class="btn btn-dark">Purchase</button>
+
                     </div>
                   </td>
                 </tr>
