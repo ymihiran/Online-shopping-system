@@ -70,6 +70,8 @@ router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
+    console.log(email + "" + password);
+
     //Validate
     if (!email || !password)
       return res

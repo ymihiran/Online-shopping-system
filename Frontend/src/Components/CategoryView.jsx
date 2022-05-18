@@ -26,7 +26,7 @@ function CategoryView() {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:8070/service/ShopService/items/category/${location.state.category}`
+        `http://localhost:8070/service/ShopService/items/category/Lap-top`
       )
       .then((res) => {
         setItems(res.data);

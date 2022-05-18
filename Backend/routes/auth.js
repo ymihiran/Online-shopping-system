@@ -70,15 +70,17 @@ router.post('/login', async (req, res) => {
                 .json({ errorMessage: "Please enter all required fields" });
 
         const existingUser = await User.findOne({ email });
+        console.log(email);
+        console.log(existingUser);
         if (!existingUser)
             return res
-                .status(401)
+                .status(490)
                 .json({ errorMessage: "Worng email or password" });
 
         const passwordCorrect = await bcrypt.compare(password, existingUser.passwordHash);
         if (!passwordCorrect)
             return res
-                .status(401)
+                .status(491)
                 .json({ errorMessage: "Worng email or password" });
 
         //sign the token

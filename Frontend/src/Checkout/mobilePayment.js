@@ -19,6 +19,37 @@ function Mobilepayment() {
   const state = location.state.state;
   const Total = location.state.total;
 
+  const Vonage = require('@vonage/server-sdk')
+
+      const vonage = new Vonage({
+        apiKey: "db4f0bee",
+        apiSecret: "8Ye8AvCAhYKBOrjD"
+    })
+
+
+
+  function sendOTP() {
+
+    
+    const from = "Vonage APIs"
+    const to = "94770025079"
+    const text = 'A text message sent using the Vonage SMS API'
+
+    alert("In function");
+
+    vonage.message.sendSms(from, to, text, (err, responseData) => {
+        if (err) {
+            console.log(err);
+        } else {
+            if(responseData.messages[0]['status'] === "0") {
+                alert("Message sent successfully.");
+            } else {
+                alert(`Message failed with error: ${responseData.messages[0]['error-text']}`);
+            }
+        }
+    })
+  }
+
   function doPayment() {
     const mobileData = {
       name: name,
@@ -30,7 +61,7 @@ function Mobilepayment() {
 
     axios
       .post(
-        "http://192.168.8.161:8280/api/service/mobile_payments/1",
+        "http://localhost:8070/service/PaymentService/payment/add",
         mobileData
       )
       .then((response) => {
@@ -91,6 +122,17 @@ function Mobilepayment() {
               setPin(e.target.value);
             }}
           />{" "}
+
+          <br />
+          <button
+            onClick={sendOTP}
+            style={{ width: "400px" }}
+            class='btn btn-success'
+            value='Log In'
+          >
+            Request OTP
+          </button>
+
           <br />
           <button
             onClick={doPayment}

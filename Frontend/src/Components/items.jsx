@@ -14,7 +14,7 @@ class items extends Component {
 
   componentDidMount() {
     axios
-      .get(`http://192.168.8.161:8280/api/service/get_item/1`)
+      .get(`http://localhost:8070/service/ShopService/items`)
       .then((res) => {
         this.setState({ items: res.data });
       });

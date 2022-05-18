@@ -11,7 +11,7 @@ export default class ActiveListing extends Component {
   //to Delete active product listings
   onDelete = (id) => {
     axios
-      .delete(`http://192.168.8.161:8280/api/service/${id}`)
+      .delete(`http://localhost:8070/api/service/${id}`)
       .then((response) => {
         swal({
           title: "Deleted!",
@@ -34,7 +34,7 @@ export default class ActiveListing extends Component {
     // display all listings
     axios
       .get(
-        `http://192.168.8.161:8280/api/service/display_dash_items/${data.sellerID}`
+        `http://localhost:8070/service/ShopService/items`
       )
       .then((response) => {
         this.setState({ business: response.data });
@@ -53,7 +53,7 @@ export default class ActiveListing extends Component {
             <br />
             <ul className='navbar-nav '>
               <table
-                class='table table-hoves'
+                className='table table-hoves'
                 id='table'
                 style={{
                   marginLeft: "150px",
@@ -75,7 +75,7 @@ export default class ActiveListing extends Component {
 
                           <td>
                             <div
-                              class='gol'
+                              className='gol'
                               style={{
                                 marginLeft: "100px",
                                 float: "right",
@@ -84,7 +84,7 @@ export default class ActiveListing extends Component {
                               }}
                             >
                               <p
-                                class='card-text'
+                                className='card-text'
                                 style={{
                                   fontSize: "15px;",
                                   fontWeight: "bold",
@@ -94,17 +94,17 @@ export default class ActiveListing extends Component {
                               >
                                 {item.Brand}
                               </p>
-                              <p class='card-text' style={{ fontSize: "15px" }}>
+                              <p className='card-text' style={{ fontSize: "15px" }}>
                                 {item.Title}
                               </p>
                               <p
-                                class='card-text'
+                                className='card-text'
                                 style={{ fontSize: "15px", marginTop: "-15px" }}
                               >
                                 {item.Condition}
                               </p>
                               <p
-                                class='card-text'
+                                className='card-text'
                                 style={{
                                   fontSize: "15px;",
                                   fontWeight: "bold",
@@ -122,7 +122,7 @@ export default class ActiveListing extends Component {
                                 }}
                               >
                                 <p
-                                  class='card-text'
+                                  className='card-text'
                                   style={{
                                     fontSize: "15px",
                                     marginTop: "-15px",
@@ -137,7 +137,7 @@ export default class ActiveListing extends Component {
                             <div style={{ marginLeft: "100px" }}>
                               <a
                                 style={{ marginRight: "40px" }}
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 href={`/edit/${item._id}`}
                                 style={{
                                   color: "white",
